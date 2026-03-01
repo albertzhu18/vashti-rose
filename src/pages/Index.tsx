@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Flavours from "@/components/Flavours";
 import VeganSection from "@/components/VeganSection";
-import Reviews from "@/components/Reviews";
 import VisitUs from "@/components/VisitUs";
 import InstagramFeed from "@/components/InstagramFeed";
 import Footer from "@/components/Footer";
@@ -16,7 +15,6 @@ const Index = () => {
       <About />
       <Flavours />
       <VeganSection />
-      <Reviews />
       <VisitUs />
       <InstagramFeed />
       <Footer />

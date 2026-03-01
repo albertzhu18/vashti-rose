@@ -6,7 +6,6 @@ import logo from "@/assets/logo.png";
 const navLinks = [
   { label: "About", hash: "about" },
   { label: "Flavours", hash: "flavours" },
-  { label: "Reviews", hash: "reviews" },
   { label: "Visit Us", hash: "visit" },
 ];
 
