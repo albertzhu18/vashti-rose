@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const navLinks = [
@@ -41,14 +42,12 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <a
-            href="https://vashtiroseicecream.com"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/menu"
             className="rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground hover:opacity-90 transition-opacity"
           >
             View Menu
-          </a>
+          </Link>
         </div>
 
         {/* Mobile toggle */}
@@ -70,14 +69,13 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <a
-            href="https://vashtiroseicecream.com"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/menu"
+            onClick={() => setOpen(false)}
             className="mt-4 inline-block rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground"
           >
             View Menu
-          </a>
+          </Link>
         </div>
       )}
     </nav>
