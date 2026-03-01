@@ -37,7 +37,7 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        <Link to="/" className="flex items-center">
+        <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center">
           <img src={logo} alt="Vashti Rose Ice Cream" className="h-10 md:h-12" />
         </Link>
 
