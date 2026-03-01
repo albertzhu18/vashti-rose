@@ -33,7 +33,7 @@ const Hero = () => {
       
       <div className="text-center px-6 max-w-3xl mx-auto">
         <h1 className="font-heading text-3xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-3 opacity-0 animate-fade-up">
-          Handcrafted Artisan Ice Cream. Classic & Vegan.
+          Handcrafted Ice Cream. Classic & Vegan.
         </h1>
         <p
           className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-up font-light"
