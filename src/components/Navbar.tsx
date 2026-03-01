@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -25,8 +26,8 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        <a href="#" className="font-heading text-xl md:text-2xl font-semibold text-foreground">
-          Vashti Rose
+        <a href="#" className="flex items-center">
+          <img src={logo} alt="Vashti Rose Ice Cream" className="h-10 md:h-12" />
         </a>
 
         {/* Desktop */}
