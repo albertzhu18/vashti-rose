@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <h3 className="font-heading text-2xl font-semibold mb-3">Vashti Rose</h3>
+            <img src={logo} alt="Vashti Rose Ice Cream" className="h-12 brightness-0 invert mb-3" />
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               In-House Made Ice Cream
               <br />
