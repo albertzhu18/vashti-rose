@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Flavours", href: "#flavours" },
-  { label: "Reviews", href: "#reviews" },
-  { label: "Visit Us", href: "#visit" },
+  { label: "About", hash: "about" },
+  { label: "Flavours", hash: "flavours" },
+  { label: "Reviews", hash: "reviews" },
+  { label: "Visit Us", hash: "visit" },
 ];
 
 const Navbar = () => {
