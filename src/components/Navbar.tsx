@@ -38,9 +38,9 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        <a href="#" className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img src={logo} alt="Vashti Rose Ice Cream" className="h-10 md:h-12" />
-        </a>
+        </Link>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
