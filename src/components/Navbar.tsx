@@ -71,14 +71,13 @@ const Navbar = () => {
       {open && (
         <div className="md:hidden bg-background/98 backdrop-blur-md border-t border-border px-6 pb-6 animate-fade-in">
           {navLinks.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              onClick={() => setOpen(false)}
-              className="block py-3 text-foreground font-medium border-b border-border/50"
+            <button
+              key={l.hash}
+              onClick={() => handleNavClick(l.hash)}
+              className="block w-full text-left py-3 text-foreground font-medium border-b border-border/50"
             >
               {l.label}
-            </a>
+            </button>
           ))}
           <Link
             to="/menu"
