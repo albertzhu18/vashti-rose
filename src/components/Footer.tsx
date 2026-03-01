@@ -21,7 +21,7 @@ const Footer = () => {
               Quick Links
             </h4>
             <nav className="flex flex-col gap-2">
-              {["About", "Flavours", "Visit Us"].map((link) => (
+              {["Flavours", "About", "Visit Us"].map((link) => (
                 <a
                   key={link}
                   href={`#${link.toLowerCase().replace(" ", "-")}`}
