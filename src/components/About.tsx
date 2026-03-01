@@ -17,12 +17,21 @@ const About = () => {
         <h2 className="font-heading text-3xl md:text-5xl font-semibold text-foreground mb-6">
           Made With Intention
         </h2>
-        <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto mb-14 leading-relaxed">
-          Vashti Rose creates classic and vegan ice creams using only a handful of
-          carefully selected fresh ingredients. Each flavour is a celebration of
-          exceptional farmers and artisan producers — both local and from around the
-          world.
-        </p>
+
+        <div className="max-w-3xl mx-auto text-muted-foreground text-lg md:text-xl leading-relaxed space-y-6 mb-10">
+          <p>
+            Vashti Rose Vegan and Dairy Classic Ice Cream are made with just a handful of fresh ingredients. Each flavour celebrates some of the world's best artisan producers and farmers, both local and international.
+          </p>
+          <p>
+            We make all our ice creams from scratch at Vashti Rose in Port Moody BC. The Classic scoops are crafted with nothing more than fresh organic pasteurized milk and organic pasteurized cream, organic cane sugar, and organic pasteurized egg yolks. The vegan scoops are made with house-made cashew milk, organic coconut milk, organic extra virgin coconut oil, organic cane sugar, pure cocoa butter, and organic carob beans. Both recipes result in a rich, decadent, naturally perfect ice cream.
+          </p>
+          <p>
+            Our dedication to quality is tireless and we are constantly developing and perfecting our recipes.
+          </p>
+          <p className="font-heading text-foreground text-base italic">
+            — Hamid and Kelly
+          </p>
+        </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {highlights.map((h) => (
