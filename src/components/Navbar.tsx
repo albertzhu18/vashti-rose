@@ -4,8 +4,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const navLinks = [
-  { label: "About", hash: "about" },
   { label: "Flavours", hash: "flavours" },
+  { label: "About", hash: "about" },
   { label: "Visit Us", hash: "visit" },
 ];
 
