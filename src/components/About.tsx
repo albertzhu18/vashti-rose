@@ -10,7 +10,7 @@ const highlights = [
 const About = () => {
   return (
     <section id="about" className="section-padding bg-background">
-      <div className="max-w-5xl mx-auto text-center">
+      <div className="max-w-5xl mx-auto text-center bg-rose-light/40 rounded-3xl p-8 md:p-12 lg:p-16">
         <p className="text-primary text-sm font-semibold tracking-widest uppercase mb-3">
           Our Story
         </p>
