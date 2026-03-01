@@ -13,6 +13,17 @@ const navLinks = [
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleNavClick = (hash: string) => {
+    setOpen(false);
+    if (location.pathname !== "/") {
+      navigate(`/#${hash}`);
+    } else {
+      document.getElementById(hash)?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
