@@ -19,19 +19,17 @@ const MarqueeRow = ({
   images: string[];
   reverse?: boolean;
 }) => {
-  // Duplicate for seamless loop
   const doubled = [...images, ...images];
 
   return (
     <div className="overflow-hidden">
       <div
-        className={`flex gap-4 ${reverse ? "animate-marquee-reverse" : "animate-marquee"}`}
-        style={{ width: `${doubled.length * 320}px` }}
+        className={`flex gap-3 w-max ${reverse ? "animate-marquee-reverse" : "animate-marquee"}`}
       >
         {doubled.map((src, i) => (
           <div
             key={i}
-            className="w-72 h-52 md:w-80 md:h-56 flex-shrink-0 rounded-xl overflow-hidden"
+            className="w-56 h-36 md:w-72 md:h-44 flex-shrink-0 rounded-lg overflow-hidden"
           >
             <img
               src={src}
@@ -48,36 +46,36 @@ const MarqueeRow = ({
 
 const Hero = () => {
   return (
-    <section className="pt-24 pb-16 bg-background overflow-hidden">
-      {/* Top marquee - scrolls left */}
+    <section className="h-screen flex flex-col justify-center pt-16 bg-background overflow-hidden">
+      {/* Top marquee */}
       <MarqueeRow images={topRow} />
 
       {/* Mission statement */}
-      <div className="text-center px-6 py-14 md:py-20 max-w-3xl mx-auto">
-        <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-semibold text-foreground mb-6">
+      <div className="text-center px-6 py-6 md:py-10 max-w-3xl mx-auto flex-shrink-0">
+        <h1 className="font-heading text-3xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-3">
           Handcrafted Ice Cream. Classic & Vegan.
         </h1>
-        <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto font-light">
+        <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-2xl mx-auto font-light">
           Made in-house with just a handful of fresh ingredients and inspired by
           the world's best artisan producers and local farmers.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <a
             href="/menu"
-            className="rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity tracking-wide"
+            className="rounded-full bg-primary px-8 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity tracking-wide"
           >
             View Flavours
           </a>
           <a
             href="#visit"
-            className="rounded-full border-2 border-foreground/30 px-8 py-3.5 text-sm font-semibold text-foreground hover:bg-foreground/5 transition-colors tracking-wide"
+            className="rounded-full border-2 border-foreground/30 px-8 py-3 text-sm font-semibold text-foreground hover:bg-foreground/5 transition-colors tracking-wide"
           >
             Visit Us Today
           </a>
         </div>
       </div>
 
-      {/* Bottom marquee - scrolls right */}
+      {/* Bottom marquee */}
       <MarqueeRow images={bottomRow} reverse />
     </section>
   );
