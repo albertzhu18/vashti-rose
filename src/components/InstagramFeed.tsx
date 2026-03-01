@@ -20,7 +20,7 @@ const InstagramFeed = () => {
           {instagramPosts.map((post) => (
             <a
               key={post.id}
-              href="https://www.instagram.com/vashtiroseicecream/"
+              href="https://www.instagram.com/vashtiroseicecream/?hl=en"
               target="_blank"
               rel="noopener noreferrer"
               className="aspect-square rounded-xl overflow-hidden bg-warm-beige group relative"
