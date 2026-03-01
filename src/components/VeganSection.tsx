@@ -15,14 +15,6 @@ const VeganSection = () => {
           flavours are crafted with the same care and premium ingredients — no
           compromise on taste.
         </p>
-        <blockquote className="relative max-w-xl mx-auto">
-          <p className="text-foreground italic text-lg font-heading leading-relaxed">
-            "I eat dairy-free ice cream and this place had loads of vegan/DF options."
-          </p>
-          <cite className="block mt-3 text-sm text-muted-foreground not-italic">
-            — Google Review
-          </cite>
-        </blockquote>
       </div>
     </section>
   );
