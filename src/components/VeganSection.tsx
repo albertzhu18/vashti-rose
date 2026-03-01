@@ -2,7 +2,7 @@ import { Leaf } from "lucide-react";
 
 const VeganSection = () => {
   return (
-    <section className="section-padding section-sage">
+    <section className="section-padding section-rose">
       <div className="max-w-4xl mx-auto text-center">
         <div className="w-14 h-14 rounded-full bg-accent/30 flex items-center justify-center mx-auto mb-6">
           <Leaf className="w-7 h-7 text-accent-foreground" />
