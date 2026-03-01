@@ -1,8 +1,3 @@
-const instagramPosts = Array.from({ length: 6 }, (_, i) => ({
-  id: i,
-  placeholder: true,
-}));
-
 const InstagramFeed = () => {
   return (
     <section className="section-padding section-cream">
@@ -11,30 +6,36 @@ const InstagramFeed = () => {
           <p className="text-primary text-sm font-semibold tracking-widest uppercase mb-3">
             @vashtiroseicecream
           </p>
-          <h2 className="font-heading text-3xl md:text-5xl font-semibold text-foreground">
+          <h2 className="font-heading text-3xl md:text-5xl font-semibold text-foreground mb-4">
             Follow Us on Instagram
           </h2>
+          <p className="text-muted-foreground max-w-md mx-auto mb-8">
+            See what we're scooping — follow along for new flavours, behind-the-scenes, and more.
+          </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-          {instagramPosts.map((post) => (
-            <a
-              key={post.id}
-              href="https://www.instagram.com/vashtiroseicecream/?hl=en"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="aspect-square rounded-xl overflow-hidden bg-warm-beige group relative"
-            >
-              <div className="w-full h-full bg-gradient-to-br from-rose-light to-sage-light flex items-center justify-center">
-                <span className="text-3xl opacity-40">🍦</span>
-              </div>
-              <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/20 transition-colors flex items-center justify-center">
-                <span className="opacity-0 group-hover:opacity-100 transition-opacity text-primary-foreground text-sm font-medium">
-                  View on Instagram
-                </span>
-              </div>
-            </a>
-          ))}
+        <div className="flex justify-center">
+          <div className="w-full max-w-lg rounded-2xl overflow-hidden shadow-sm border border-border/50 bg-card">
+            <iframe
+              src="https://www.instagram.com/vashtiroseicecream/embed/"
+              className="w-full border-0"
+              height="600"
+              scrolling="no"
+              title="Vashti Rose Ice Cream Instagram Feed"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <div className="text-center mt-10">
+          <a
+            href="https://www.instagram.com/vashtiroseicecream/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity tracking-wide"
+          >
+            Follow @vashtiroseicecream
+          </a>
         </div>
       </div>
     </section>
